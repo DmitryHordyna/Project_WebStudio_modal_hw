@@ -36,6 +36,10 @@
 //   font-size: 14px;
 //   line-height: 1.14;
 // }
-.galery {
-  display: none;
+
+// Media phone
+@media screen and (max-width: 767px) {
+  .galery {
+    display: none;
+  }
 }

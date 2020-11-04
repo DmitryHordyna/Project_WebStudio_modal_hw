@@ -136,3 +136,147 @@
 //   background-image: url("../images/svg/iconsend.svg");
 //   @extend %backgroundIcon;
 // }
+
+.footer-section {
+  background-color: map-get($colors, "footer");
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.place {
+  margin-top: 20px;
+  color: map-get($colors, "title");
+  &:hover,
+  :focus {
+    color: map-get($colors, "accent");
+  }
+}
+.title-footer {
+  color: map-get($colors, "title");
+  text-align: center;
+  font-weight: map-get($fontWeight, "bold");
+  font-size: 14px;
+  line-height: 1.14;
+}
+.social-list {
+  display: flex;
+  margin-top: 20px;
+
+  & .social-icon {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @extend %backgroundIcon;
+    @extend %transition;
+
+    &:hover,
+    :focus {
+      background-color: map-get($colors, "accent");
+    }
+  }
+}
+.icon1 {
+  background-image: url("../images/svg/instagram2.svg");
+}
+.icon2 {
+  background-image: url("../images/svg/twitter2.svg");
+}
+.icon3 {
+  background-image: url("../images/svg/facebook2.svg");
+}
+.icon4 {
+  background-image: url("../images/svg/linkedin2.svg");
+}
+.social-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subscribe {
+  text-align: center;
+  & .subscribe-title {
+    margin-bottom: 20px;
+
+    color: map-get($colors, "title");
+    font-weight: map-get($fontWeight, "bold");
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  & .subscrime-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    &:focus {
+      border: 1px solid map-get($colors, "accent");
+    }
+  }
+}
+.btn-subscribe {
+  display: flex;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  color: map-get($colors, "title");
+  letter-spacing: map-get($letterSpacing, "most");
+  font-weight: map-get($fontWeight, "bolt");
+  font-size: 16px;
+  line-height: 1.86;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  @extend %transition;
+  &:hover,
+  :focus {
+    background-color: map-get($colors, "btn-focus");
+  }
+}
+.btn-subscribe::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 28px;
+  background-image: url("../images/svg/iconsend.svg");
+  @extend %backgroundIcon;
+}
+
+// Media phone
+@media screen and(max-width:767px) {
+  .footer-logo {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & .conteiner-social {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    justify-content: center;
+  }
+  & .subscribe {
+    text-align: center;
+  }
+  & .btn-subscribe {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+// Media table
+// @media screen and(min-width:767px );

@@ -96,22 +96,18 @@
   background-image: url("../images/svg/astronaut1.svg");
 }
 
-.feature-list {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .feature-list {
     display: flex;
     text-align: center;
     justify-content: center;
   }
-}
-.feature-item::before {
-  @media screen and (max-width: 767px) {
+  & .feature-item::before {
     margin-right: auto;
     margin-left: auto;
   }
-}
-.feature-list {
-  @extend %flexcardset;
-  @media screen and (max-width: 767px) {
+  & .feature-list {
+    @extend %flexcardset;
     & .item {
       margin-bottom: 30px;
     }

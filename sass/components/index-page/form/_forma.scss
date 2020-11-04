@@ -1,5 +1,5 @@
 .form {
-  max-width: 448px;
+  width: 330px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,7 +19,7 @@
   margin-bottom: 4px;
 
   color: map-get($colors, "secondary");
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.16;
   letter-spacing: map-get($letterSpacing, "little");
 }
@@ -41,7 +41,7 @@
   margin-bottom: 20px;
   & .texterea-text {
     padding: 16px;
-    height: 120px;
+    height: 90px;
     &::placeholder {
       font-size: 14px;
       line-height: 1.16;
@@ -52,7 +52,6 @@
 .form-chek {
   text-align: center;
   & label {
-    display: inline-flex;
     align-items: center;
 
     font-size: 14px;
@@ -68,13 +67,16 @@
   height: 10px;
   position: absolute;
   text-align: center;
+  justify-content: center;
 }
+
 .span-icon {
-  display: inline-block;
+  display: inline-flex;
+
   margin-right: 8px;
 
   width: 15px;
-  height: 16px;
+  height: 15px;
 
   border: 2px solid map-get($colors, "primary");
   border-radius: 4px;

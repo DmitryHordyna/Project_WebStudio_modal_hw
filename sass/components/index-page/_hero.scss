@@ -37,8 +37,10 @@
     background-color: map-get($colors, "btn-focus");
   }
 }
-.hero {
-  @media screen and (max-width: 767px) {
+
+// Media phone
+@media screen and (max-width: 767px) {
+  .hero {
     & .title {
       font-size: 26px;
       line-height: 1.6;

@@ -32,7 +32,7 @@
 
 .client-item {
   @extend %flexboxcentre;
-  width: 170px;
+  // width: 170px;
   height: 90px;
 
   border: 1px solid map-get($colors, "icon");
@@ -52,15 +52,18 @@
   fill: map-get($colors, "icon");
   @extend %transition;
 }
-.client-list {
-  @media screen and (max-width: 767px) {
+
+// Media phone
+@media screen and (max-width: 767px) {
+  .client-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    margin-left: -30px;
+    margin-top: -30px;
     & .client-item {
-      margin-right: 30px;
-      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-top: 30px;
+      flex-basis: calc(100% / 2 - 30px);
     }
   }
 }

@@ -271,9 +271,9 @@
 постоянние клиенты -->
 
       <section class="section client">
-        <div class="container ">
+        <div class="container  ">
           <h2 class="title section-title client-title">Постоянние клиенты</h2>
-          <ul class="list client-list">
+          <ul class="list client-list mob-container">
             <li class="item client-item">
               <a href="#" class="link client-link">
                 <svg class="company" width="45" height="50">
@@ -327,7 +327,7 @@
           <div class="modal-icon">
             <button data-modal-close class=" btn-close">
               <svg class="icon-exit" width="11" height="11">
-                <use href="./images/svg/symbolall.svg#icon-close"></use>
+                <use href="../images/svg/symbolall.svg#icon-close"></use>
               </svg>
             </button>
           </div>
@@ -340,14 +340,14 @@
                 <label class="form-label" for="name">Имя</label>
                 <input type="text" class=" form-input form-no" name="user-name" id="name" placeholder="" />
                 <svg class="form-icon" width="18" height="18">
-                  <use href="./images/svg/symbolall.svg#icon-person"></use>
+                  <use href="../images/svg/symbolall.svg#icon-person"></use>
                 </svg>
               </div>
               <div class="form-field">
                 <label class=" form-label " for="tel">Телефон</label>
                 <input type="tel" class=" form-input form-no" name="tel" id="tel" placeholder="" autocomplete="off" />
                 <svg class="form-icon" width="18" height="18">
-                  <use href="./images/svg/symbolall.svg#icon-phone"></use>
+                  <use href="../images/svg/symbolall.svg#icon-phone"></use>
                 </svg>
               </div>
               <div class="form-field">
@@ -378,12 +378,13 @@
               </div>
 
               <div class="form-chek">
-                <label class="form-name form-label check-icon">
+                <label class="form-name form-label ">
+                 <div>
                   <input type="checkbox" class="form-input checkbox" name="chek" value="chek" />
                   <span class="span-icon"></span>
                   <span class="span-check-text"></span>
                   Соглашаюсь с рассылкой и принимаю <a href="#" class=" link span-check"> Условия договора</a>
-                </label>
+              </div>  </label>
 
                 <button class="button btn-submit" type="submit">Отправить</button>
               </div>

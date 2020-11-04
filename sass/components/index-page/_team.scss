@@ -116,7 +116,6 @@
     }
   }
 }
-
 .team-link-icon {
   fill: map-get($colors, "icon");
   @extend %transition;
@@ -126,9 +125,12 @@
     fill: map-get($colors, "title");
   }
 }
-.team-item {
-  @media screen and (max-width: 767px) {
+
+// Media phone
+@media screen and (max-width: 767px) {
+  & .team-item {
     margin-right: auto;
     margin-left: auto;
+    max-width: 450px;
   }
 }

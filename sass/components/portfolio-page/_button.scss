@@ -27,3 +27,47 @@
 //     background-color: map-get($colors, "accent");
 //   }
 // }
+.change {
+  & .change-title {
+    display: none;
+  }
+  & .change-list {
+    & .item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+.button-secondary {
+  padding: 6px 22px;
+
+  color: map-get($colors, "primary");
+  background-color: map-get($colors, "topcolor");
+
+  font-weight: map-get($fontWeight, "medial");
+  font-size: 16px;
+  line-height: 1.6;
+  @extend %transition;
+  &:hover,
+  :focus {
+    color: map-get($colors, "title");
+    background-color: map-get($colors, "accent");
+  }
+}
+
+// Media phone
+@media screen and(max-width:767px) {
+  .change {
+    border-top: 1px solid map-get($colors, "topcolor");
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  & .change-list {
+    text-align: start;
+    & .item {
+      display: inline;
+    }
+  }
+  & .button-secondary {
+    margin-bottom: 15px;
+  }
+}
