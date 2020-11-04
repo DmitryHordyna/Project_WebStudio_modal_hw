@@ -450,15 +450,6 @@ svg {
           align-items: center;
 }
 
-.feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
-}
-
 .social-list .social-icon, .btn-subscribe::after, .hero, .feature-item::before, .form-input:checked + .span-icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -475,6 +466,8 @@ svg {
   margin-left: 15px;
   text-decoration: none;
   color: #2196f3;
+  font-size: 24px;
+  line-height: 1.16;
   font-family: "Raleway";
   font-weight: 700;
 }
@@ -491,29 +484,26 @@ svg {
   color: #2196f3;
 }
 
-@media screen and (max-width: 768px) {
-  .logo {
-    font-size: 24px;
-    line-height: 1.16;
-  }
-}
-
 .header {
   position: relative;
 }
 
 .header .main-nav {
+  border: 3px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 60px;
-  margin-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .header .main-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .menu-button {
@@ -552,8 +542,12 @@ svg {
 .menu-container {
   background-color: #ffffff;
   text-align: center;
-  font-size: 20px;
-  border-top: 1px solid #e5e5e5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .menu-container.is-open {
@@ -584,7 +578,6 @@ svg {
   content: " ";
   position: absolute;
   left: 0;
-  bottom: -8px;
   width: 100%;
   height: 5px;
   background-color: #2196f3;
@@ -608,13 +601,14 @@ svg {
 .link-active {
   color: #2196f3;
   position: relative;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .link-active::after {
   content: " ";
   position: absolute;
   left: 0;
-  bottom: -8px;
   width: 100%;
   height: 5px;
   background-color: #2196f3;
@@ -622,10 +616,6 @@ svg {
   border-radius: 2px;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}
-
-.address-nav {
-  margin-bottom: 60px;
 }
 
 .address-link {
@@ -648,6 +638,10 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
   .site-nav {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -656,14 +650,37 @@ svg {
     margin-top: 52px;
     margin-bottom: 40px;
   }
+  .address-nav {
+    margin-bottom: 60px;
+  }
   .address-link {
     font-size: 18px;
     line-height: 1.16;
-    margin-bottom: 16px;
+  }
+  .address-nav-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .link-current {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+  .link-current::after {
+    bottom: -33px;
+  }
+  .link-active {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+  .link-active::after {
+    bottom: -8px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -673,17 +690,36 @@ svg {
             flex-grow: 1;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    border: 1px solid #ececec;
   }
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: auto;
+    margin-left: 88px;
   }
   .site-nav .item:not(:last-child) {
     margin-right: 50px;
+  }
+  .address-link {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .link-current {
+    font-size: 16px;
+    line-height: 1.14;
+  }
+  .link-current::after {
+    bottom: -33px;
+  }
+  .link-active {
+    font-size: 16px;
+    line-height: 1.14;
+  }
+  .link-active::after {
+    bottom: -33px;
   }
 }
 
@@ -942,23 +978,19 @@ svg {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-@media screen and (max-width: 767px) {
   .feature-item::before {
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-@media screen and (max-width: 767px) {
   .feature-list .item {
     margin-bottom: 30px;
   }
 }
 
-.galery {
-  display: none;
+@media screen and (max-width: 767px) {
+  .galery {
+    display: none;
+  }
 }
 
 .team {

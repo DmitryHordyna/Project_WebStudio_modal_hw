@@ -1,11 +1,14 @@
 .header {
   position: relative;
+
   & .main-nav {
+    border: 3px solid red;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    min-height: 60px;
-    margin-right: 15px;
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
   }
 }
 .menu-button {
@@ -36,8 +39,8 @@
 .menu-container {
   background-color: map-get($colors, "title");
   text-align: center;
-  font-size: 20px;
-  border-top: 1px solid map-get($colors, "topcolor");
+  align-items: center;
+  justify-content: end;
 
   &.is-open {
     display: block;
@@ -66,7 +69,6 @@
       content: " ";
       position: absolute;
       left: 0;
-      bottom: -8px;
 
       width: 100%;
       height: 5px;
@@ -89,11 +91,12 @@
 .link-active {
   color: map-get($colors, "accent");
   position: relative;
+  font-weight: map-get($fontWeight, "medial");
+  letter-spacing: map-get($letterSpacing, "small");
   &::after {
     content: " ";
     position: absolute;
     left: 0;
-    bottom: -8px;
 
     width: 100%;
     height: 5px;
@@ -130,7 +133,11 @@
 
 // Media phone
 @media screen and(max-width:767px) {
-  .site-nav {
+  & .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  &.site-nav {
     margin-top: 60px;
     margin-bottom: 60px;
   }
@@ -138,29 +145,74 @@
     margin-top: 52px;
     margin-bottom: 40px;
   }
-  .address-link {
+  & .address-nav {
+    margin-bottom: 60px;
+  }
+  & .address-link {
+    // margin-bottom: 16px;
     font-size: 18px;
     line-height: 1.16;
   }
+  &.address-nav-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  & .link-current {
+    font-size: 18px;
+    line-height: 1.16;
+    &::after {
+      bottom: -33px;
+    }
+  }
+  & .link-active {
+    font-size: 18px;
+    line-height: 1.16;
+    &::after {
+      bottom: -8px;
+    }
+  }
 }
-
 // Media table
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  &.menu-container {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
+    border: 1px solid #ececec;
   }
   & .site-nav {
     display: flex;
+    margin-right: auto;
+    margin-left: 88px;
     & .item:not(:last-child) {
       margin-right: 50px;
     }
   }
-  // & .address-nav-list {
-  //   align-items: baseline;
-  // }
+  & .address-link {
+    justify-content: end;
+  }
+  & .link-current {
+    font-size: 16px;
+    line-height: 1.14;
+    &::after {
+      bottom: -33px;
+    }
+  }
+  & .link-active {
+    font-size: 16px;
+    line-height: 1.14;
+    &::after {
+      bottom: -33px;
+    }
+  }
 }
+// & .address-nav-list {
+//   align-items: baseline;
+// }
+
 // & .address-nav {
 //  {
 

@@ -107,7 +107,6 @@
     margin-left: auto;
   }
   & .feature-list {
-    @extend %flexcardset;
     & .item {
       margin-bottom: 30px;
     }
