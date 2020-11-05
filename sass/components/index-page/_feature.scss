@@ -48,13 +48,11 @@
 // .icon-space::before {
 //   background-image: url("../images/svg/astronaut1.svg");
 // }
+.feature-list {
+  border: 3px solid red;
+}
 .feature-title {
   display: none;
-}
-.feature-list {
-  & .item {
-    margin-left: 30px;
-  }
 }
 .feature-item-title {
   color: map-get($colors, "primary");
@@ -75,7 +73,7 @@
   content: "";
   display: block;
   height: 120px;
-  max-width: 450px;
+
   margin-bottom: 30px;
   border-radius: 4px;
 
@@ -97,18 +95,30 @@
 }
 
 @media screen and (max-width: 767px) {
-  .feature-list {
-    display: flex;
+  & .feature-list {
+    max-width: 450px;
+
     text-align: center;
-    justify-content: center;
-  }
-  & .feature-item::before {
     margin-right: auto;
     margin-left: auto;
-  }
-  & .feature-list {
-    & .item {
+    & .item:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  & .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .item {
+      flex-basis: calc(100% / 2 - 15px);
+    }
+    & .item:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    & .item:nth-child(2n + 1) {
+      margin-right: 30px;
     }
   }
 }

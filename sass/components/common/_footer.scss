@@ -258,10 +258,18 @@
 
 // Media phone
 @media screen and(max-width:767px) {
-  .footer-logo {
+  & .footer-logo {
     display: table;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+  }
+  & .address-link {
+    justify-content: center;
+    margin-top: 0;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
   & .conteiner-social {
     margin-top: 60px;
@@ -279,4 +287,44 @@
   }
 }
 // Media table
-// @media screen and(min-width:767px );
+@media screen and(min-width:767px ) {
+  & .footer-logo {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  & .footer-info {
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  & .container-logo {
+    border: 3px solid red;
+    & .footer-list {
+      border: 3px solid blue;
+    }
+    & .address-link {
+      justify-content: center;
+      margin-top: 0;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  & .conteiner-social {
+    border: 3px solid red;
+  }
+  & .subscribe-title {
+    margin-top: 60px;
+  }
+  & .subscribe {
+    text-align: center;
+  }
+  & .btn-subscribe {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

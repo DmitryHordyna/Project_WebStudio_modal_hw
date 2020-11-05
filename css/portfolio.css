@@ -394,7 +394,7 @@ svg {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -663,7 +663,7 @@ svg {
     line-height: 1.16;
   }
   .link-current::after {
-    bottom: -33px;
+    bottom: -8px;
   }
   .link-active {
     font-size: 18px;
@@ -688,7 +688,6 @@ svg {
             flex-grow: 1;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    border: 1px solid #ececec;
   }
   .site-nav {
     display: -webkit-box;
@@ -710,14 +709,14 @@ svg {
     line-height: 1.14;
   }
   .link-current::after {
-    bottom: -33px;
+    bottom: -34.5px;
   }
   .link-active {
     font-size: 16px;
     line-height: 1.14;
   }
   .link-active::after {
-    bottom: -33px;
+    bottom: -34.5px;
   }
 }
 
@@ -855,6 +854,16 @@ svg {
     display: table;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .address-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+  }
+  .address-link:not(:last-child) {
+    margin-bottom: 8px;
   }
   .conteiner-social {
     margin-top: 60px;
@@ -864,6 +873,55 @@ svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .subscribe {
+    text-align: center;
+  }
+  .btn-subscribe {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer-logo {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .footer-info {
+    border: 3px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .container-logo {
+    border: 3px solid red;
+  }
+  .container-logo .footer-list {
+    border: 3px solid blue;
+  }
+  .container-logo .address-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+  }
+  .container-logo .address-link:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .conteiner-social {
+    border: 3px solid red;
+  }
+  .subscribe-title {
+    margin-top: 60px;
   }
   .subscribe {
     text-align: center;

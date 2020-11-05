@@ -160,7 +160,7 @@
     font-size: 18px;
     line-height: 1.16;
     &::after {
-      bottom: -33px;
+      bottom: -8px;
     }
   }
   & .link-active {
@@ -181,7 +181,6 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-    border: 1px solid #ececec;
   }
   & .site-nav {
     display: flex;
@@ -198,14 +197,14 @@
     font-size: 16px;
     line-height: 1.14;
     &::after {
-      bottom: -33px;
+      bottom: -34.5px;
     }
   }
   & .link-active {
     font-size: 16px;
     line-height: 1.14;
     &::after {
-      bottom: -33px;
+      bottom: -34.5px;
     }
   }
 }
