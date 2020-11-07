@@ -1079,6 +1079,8 @@ svg {
 
 .show-list {
   border: 3px solid red;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -1086,20 +1088,19 @@ svg {
     max-width: 370px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .item-block:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .show-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 780px;
-    margin-right: auto;
-    margin-left: auto;
   }
   .show-list .item-block {
     max-width: 354;
@@ -1112,6 +1113,48 @@ svg {
   }
   .show-list .item-block:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .show-list {
+    max-width: 780px;
+  }
+  .show-list .item-block {
+    max-width: 354;
+    -ms-flex-preferred-size: calc(100 / 2 - 30px);
+        flex-basis: calc(100 / 2 - 30px);
+  }
+  .show-list .item-block:nth-child(even) {
+    margin-right: 0;
+  }
+  .show-list .item-block:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .show-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .item-block {
+    max-width: 354;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    outline: 1px solid #ececec;
+  }
+  .item-block:nth-child(3n) {
+    margin-right: 0;
+  }
+  .item-block:nth-last-child(-n + 3) {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
