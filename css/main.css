@@ -390,8 +390,6 @@ svg {
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -486,6 +484,7 @@ svg {
 
 .header {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .main-nav {
@@ -537,6 +536,10 @@ svg {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button svg {
+  margin-right: 15px;
 }
 
 .menu-container {
@@ -705,6 +708,9 @@ svg {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+  .address-nav {
+    margin-right: 15px;
   }
   .link-current {
     font-size: 16px;

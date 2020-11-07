@@ -1,6 +1,6 @@
 .header {
   position: relative;
-
+  border-bottom: 1px solid #ececec;
   & .main-nav {
     border: 3px solid red;
 
@@ -22,7 +22,6 @@
   :focus {
     fill: map-get($colors, "accent");
   }
-
   & .icon-cross {
     display: none;
   }
@@ -34,6 +33,9 @@
   }
   @media screen and(min-width:767px) {
     display: none;
+  }
+  & svg {
+    margin-right: 15px;
   }
 }
 .menu-container {
@@ -192,6 +194,9 @@
   }
   & .address-link {
     justify-content: end;
+  }
+  & .address-nav {
+    margin-right: 15px;
   }
   & .link-current {
     font-size: 16px;
