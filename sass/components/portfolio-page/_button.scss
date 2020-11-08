@@ -28,11 +28,11 @@
 //   }
 // }
 .change {
+  padding-bottom: 0;
   & .change-title {
     display: none;
   }
   & .change-list {
-    border: 3px solid red;
     & .item:not(:last-child) {
       margin-right: 8px;
     }
@@ -55,14 +55,8 @@
   }
 }
 
-// Media phone
 @media screen and (max-width: 767px) {
-  .change {
-    border-top: 1px solid map-get($colors, "topcolor");
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-  & .change-list {
+  .change-list {
     text-align: start;
     & .item {
       display: inline;
@@ -73,15 +67,16 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .change {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
   .change-list {
     display: flex;
     justify-content: center;
     & .change-item {
       margin-bottom: 0;
     }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .change {
+    padding-top: 60px;
   }
 }
