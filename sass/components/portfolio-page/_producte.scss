@@ -19,9 +19,7 @@
 .item-block {
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 6 * 15px) / 3);
@@ -33,6 +31,22 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .table-item-bt {
+    margin-bottom: 0;
+  }
+  .phone-item-tp {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .destop-item-bt {
+    margin-bottom: 0;
+  }
+  .destop-item-tp {
+    margin-top: 0;
+  }
+}
 .item-block {
   outline: 1px solid #ececec;
   @extend %transition;

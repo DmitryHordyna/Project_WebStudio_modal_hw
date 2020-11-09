@@ -1,13 +1,11 @@
 .logo {
-  margin-left: 15px;
-
   text-decoration: none;
   color: map-get($colors, "accent");
   font-size: 24px;
-  line-height: 1.16;
+  line-height: 1.166;
   font-family: "Raleway";
   font-weight: map-get($fontWeight, "bold");
-
+  letter-spacing: map-get($letterSpacing, "more");
   & span {
     color: map-get($colors, "primary");
   }
@@ -17,5 +15,11 @@
 
   & span {
     color: map-get($colors, "accent");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }

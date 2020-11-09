@@ -29,6 +29,10 @@
 // }
 .change {
   padding-bottom: 0;
+  & .change-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   & .change-title {
     display: none;
   }
