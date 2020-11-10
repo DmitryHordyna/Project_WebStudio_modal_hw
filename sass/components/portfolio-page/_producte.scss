@@ -29,6 +29,10 @@
 .item-block {
   outline: 1px solid #ececec;
   @extend %transition;
+  &:hover .text-shadow {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
   .title {
     color: map-get($colors, "primary");
 
@@ -77,10 +81,6 @@
   align-items: center;
 
   overflow: hidden;
-  &:hover .text-shadow {
-    transform: translateY(0);
-    /* opacity: 1; */
-  }
 
   & .text-shadow {
     position: absolute;

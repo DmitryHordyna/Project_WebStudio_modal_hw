@@ -1149,6 +1149,12 @@ svg {
   outline: 1px solid #ececec;
 }
 
+.item-block:hover .text-shadow {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  /* opacity: 1; */
+}
+
 .item-block .title {
   color: #212121;
   padding-top: 20px;
@@ -1198,12 +1204,6 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-}
-
-.shadow-block:hover .text-shadow {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  /* opacity: 1; */
 }
 
 .shadow-block .text-shadow {

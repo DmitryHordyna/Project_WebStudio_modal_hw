@@ -69,15 +69,14 @@
     &:hover,
     :focus {
       background-color: map-get($colors, "accent");
+      .team-link-icon {
+        @extend %transition;
+        fill: map-get($colors, "title");
+      }
     }
   }
 }
 .team-link-icon {
   fill: map-get($colors, "icon");
   @extend %transition;
-  &:hover,
-  :focus {
-    @extend %transition;
-    fill: map-get($colors, "title");
-  }
 }
