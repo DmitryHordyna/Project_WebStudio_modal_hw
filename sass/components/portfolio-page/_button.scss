@@ -1,48 +1,40 @@
-// .change {
-//   padding-top: 94px;
-//   // padding-bottom: 50px;
-//   & .change-title {
-//     display: none;
-//   }
-// }
-// .change-list {
-//   @extend %flexboxcentre;
-//   & .item:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
-// .button-secondary {
-//   padding: 6px 22px;
-
-//   color: map-get($colors, "primary");
-//   background-color: map-get($colors, "topcolor");
-
-//   font-weight: map-get($fontWeight, "medial");
-//   font-size: 16px;
-//   line-height: 1.6;
-//   @extend %transition;
-//   &:hover,
-//   :focus {
-//     color: map-get($colors, "title");
-//     background-color: map-get($colors, "accent");
-//   }
-// }
 .change {
   padding-bottom: 0;
-  & .change-container {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+  }
+  .change-container {
     padding-left: 15px;
     padding-right: 15px;
   }
-  & .change-title {
+  .change-title {
     display: none;
   }
-  & .change-list {
-    & .item:not(:last-child) {
-      margin-right: 8px;
+  .change-list {
+    @media screen and (max-width: 767px) {
+      text-align: start;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+    .item {
+      @media screen and (max-width: 767px) {
+        display: inline;
+      }
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+      }
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
     }
   }
 }
 .button-secondary {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
   padding: 6px 22px;
 
   color: map-get($colors, "primary");
@@ -59,28 +51,20 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .change-list {
-    text-align: start;
-    & .item {
-      display: inline;
-    }
-  }
-  & .button-secondary {
-    margin-bottom: 15px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .change-list {
-    display: flex;
-    justify-content: center;
-    & .change-item {
-      margin-bottom: 0;
-    }
-  }
-}
-@media screen and (max-width: 1199px) {
-  .change {
-    padding-top: 60px;
-  }
-}
+// .change-list {
+//   @media screen and (max-width: 767px) {
+//     text-align: start;
+//   }
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   .item {
+//     @media screen and (max-width: 767px) {
+//       display: inline;
+//     }
+//     @media screen and (min-width: 768px) {
+//       margin-bottom: 0;
+//     }
+//   }
+// }

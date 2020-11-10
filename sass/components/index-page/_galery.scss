@@ -1,44 +1,47 @@
-// Media phone
-@media screen and (max-width: 1199px) {
-  .galery {
+.galery {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
-}
-@media screen and (mix-width: 1200px) {
-  .galery {
+  @media screen and (min-width: 1200px) {
     padding-top: 0;
-  }
-  .galery-list {
-    & .item {
-      margin-left: 30px;
 
-      flex-basis: calc(100% / 3 - 30px);
+    .galery-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      & .item {
+        margin-left: 30px;
+
+        flex-basis: calc(100% / 3 - 30px);
+      }
+      & .item:first-child {
+        margin-left: 0;
+      }
     }
-  }
-  .galery-item {
-    position: relative;
-    &::before {
-      display: inline-block;
+    .galery-item {
+      position: relative;
+      &::before {
+        display: inline-block;
+        position: absolute;
+        bottom: 3px;
+
+        content: "";
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 370px;
+        height: 70px;
+      }
+    }
+    .galery-text {
       position: absolute;
-      bottom: 3px;
+      text-transform: uppercase;
 
-      content: "";
-      background-color: rgba(47, 48, 58, 0.8);
-      width: 370px;
-      height: 70px;
+      bottom: 27px;
+      left: 86px;
+
+      color: map-get($colors, "title");
+      font-weight: map-get($fontWeight, "bold");
+      font-size: 14px;
+      line-height: 1.14;
     }
-  }
-
-  .galery-text {
-    position: absolute;
-    text-transform: uppercase;
-
-    bottom: 27px;
-    left: 86px;
-
-    color: map-get($colors, "title");
-    font-weight: map-get($fontWeight, "bold");
-    font-size: 14px;
-    line-height: 1.14;
   }
 }

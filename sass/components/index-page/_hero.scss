@@ -17,33 +17,27 @@
   @extend %backgroundIcon;
 
   &-title {
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 1.6;
+    }
     margin-bottom: 30px;
 
     color: map-get($colors, "title");
     font-weight: map-get($fontWeight, "big");
     letter-spacing: map-get($letterSpacing, "most");
   }
-}
-.btn-hero {
-  padding: 10px 32px;
+  .btn-hero {
+    padding: 10px 32px;
 
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: map-get($letterSpacing, "more");
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  &:hover,
-  :focus {
-    background-color: map-get($colors, "btn-focus");
-  }
-}
-
-// Media phone
-@media screen and (max-width: 767px) {
-  .hero {
-    & .title {
-      font-size: 26px;
-      line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: map-get($letterSpacing, "more");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    &:hover,
+    :focus {
+      background-color: map-get($colors, "btn-focus");
     }
   }
 }

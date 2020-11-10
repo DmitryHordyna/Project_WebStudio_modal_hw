@@ -671,10 +671,6 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
   .header .site-nav {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -752,7 +748,7 @@ svg {
 @media screen and (max-width: 1199px) {
   .header {
     padding-top: 22px;
-    padding-bottom: 22px;
+    padding-bottom: 21px;
   }
   .address-nav-list:not(:last-child) {
     margin-bottom: 10px;
@@ -1055,6 +1051,12 @@ svg {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .change {
+    padding-top: 60px;
+  }
+}
+
 .change .change-container {
   padding-left: 15px;
   padding-right: 15px;
@@ -1062,6 +1064,35 @@ svg {
 
 .change .change-title {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .change .change-list {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .change .change-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .change .change-list .item {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .change .change-list .item {
+    margin-bottom: 0;
+  }
 }
 
 .change .change-list .item:not(:last-child) {
@@ -1077,42 +1108,16 @@ svg {
   line-height: 1.6;
 }
 
-.button-secondary:hover,
-.button-secondary :focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
 @media screen and (max-width: 767px) {
-  .change-list {
-    text-align: start;
-  }
-  .change-list .item {
-    display: inline;
-  }
   .button-secondary {
     margin-bottom: 15px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .change-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .change-list .change-item {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .change {
-    padding-top: 60px;
-  }
+.button-secondary:hover,
+.button-secondary :focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1161,9 +1166,10 @@ svg {
   .table-item-bt {
     margin-bottom: 0;
   }
-  .phone-item-tp {
-    margin-top: 0;
-  }
+}
+
+.table-item-bt .phone-item-tp {
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
