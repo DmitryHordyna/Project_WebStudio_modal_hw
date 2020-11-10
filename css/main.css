@@ -389,7 +389,6 @@ svg {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 5px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -783,28 +782,11 @@ svg {
 }
 
 .container-footer {
-  outline: 5px solid brown;
   padding-left: 15px;
   padding-right: 15px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.container-footer .footer-info {
-  outline: 5px solid coral;
-}
-
-.container-footer .container-logo {
-  outline: 5px solid blue;
-}
-
-.container-footer .container-social {
-  outline: 5px solid purple;
-}
-
-.container-footer .subscribe {
-  outline: 5px solid green;
 }
 
 .container-logo .footer-logo {
@@ -1659,28 +1641,11 @@ submit:focus,
 }
 
 .container-footer {
-  outline: 5px solid brown;
   padding-left: 15px;
   padding-right: 15px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.container-footer .footer-info {
-  outline: 5px solid coral;
-}
-
-.container-footer .container-logo {
-  outline: 5px solid blue;
-}
-
-.container-footer .container-social {
-  outline: 5px solid purple;
-}
-
-.container-footer .subscribe {
-  outline: 5px solid green;
 }
 
 .container-logo .footer-logo {

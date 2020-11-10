@@ -5,22 +5,9 @@
 }
 
 .container-footer {
-  outline: 5px solid brown;
   padding-left: 15px;
   padding-right: 15px;
   align-items: baseline;
-  & .footer-info {
-    outline: 5px solid coral;
-  }
-  & .container-logo {
-    outline: 5px solid blue;
-  }
-  & .container-social {
-    outline: 5px solid purple;
-  }
-  & .subscribe {
-    outline: 5px solid green;
-  }
 }
 
 .container-logo {

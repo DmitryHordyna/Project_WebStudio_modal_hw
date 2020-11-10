@@ -389,7 +389,6 @@ svg {
 .container {
   margin-left: auto;
   margin-right: auto;
-  outline: 5px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -781,28 +780,11 @@ svg {
 }
 
 .container-footer {
-  outline: 5px solid brown;
   padding-left: 15px;
   padding-right: 15px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.container-footer .footer-info {
-  outline: 5px solid coral;
-}
-
-.container-footer .container-logo {
-  outline: 5px solid blue;
-}
-
-.container-footer .container-social {
-  outline: 5px solid purple;
-}
-
-.container-footer .subscribe {
-  outline: 5px solid green;
 }
 
 .container-logo .footer-logo {
@@ -1126,58 +1108,40 @@ svg {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .test {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.show .show-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.show .show-list .item-block {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .test .show-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .show .show-list .item-block {
+    width: calc((100% - 15px * 4) / 2);
   }
 }
 
-@media screen and (min-width: 768px) {
-  .item-block {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .item-block {
-    width: calc((100% - 6 * 15px) / 3);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .item-block:not(:last-child) {
+@media screen and (max-width: 1199px) {
+  .show .show-list .item-block {
     margin-bottom: 30px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .table-item-bt {
+  .show .show-list .item-block:last-child {
     margin-bottom: 0;
   }
-}
-
-.table-item-bt .phone-item-tp {
-  margin-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
-  .destop-item-bt {
-    margin-bottom: 0;
+  .show .show-list .item-block {
+    width: calc((100% - 15px * 6) / 3);
   }
-  .destop-item-tp {
-    margin-top: 0;
+  .show .show-list .item-block:nth-child(-n + 6) {
+    margin-bottom: 30px;
   }
 }
 
