@@ -97,15 +97,35 @@
           <h2 class="title section-title galery-title">Чем мы занимаемся</h2>
           <ul class="list galery-list">
             <li class="item galery-item">
-              <img src="images/jpg/1img(1).jpg" alt="робота за комп'ютером" width="370" height="294" />
+              <img 
+              srcset="
+              ./images/jpg/img360f1.jpg 1x,
+               ./images/jpg/img640f1.jpg 2x
+               "
+                src="./images/jpg/img360f1.jpg"
+              
+                 alt="робота за комп'ютером"  />
               <p class="text galery-text">Десктопные приложения</p>
             </li>
             <li class="item galery-item">
-              <img src="images/jpg/img(1).jpg" alt="робота за телефоном" width="370" height="294" />
+              <img
+              srcset="
+              ./images/jpg/img360f2.jpg 1x,
+               ./images/jpg/img640f2.jpg 2x
+               "
+                src="./images/jpg/img360f2.jpg"
+            
+                alt="робота за телефоном"  />
               <p class="text galery-text">Мобильные приложения</p>
             </li>
             <li class="item galery-item">
-              <img src="images/jpg/img(2).jpg" alt="робота за планшетом" width="370" height="294" />
+              <img 
+              srcset="
+              ./images/jpg/img360f3.jpg 1x,
+               ./images/jpg/img640f3.jpg 2x
+               "
+                src="./images/jpg/img360f3.jpg"
+                 alt="робота за планшетом"  />
               <p class="text galery-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -120,7 +140,14 @@
           <h2 class="title section-title team-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="item team-item">
-              <img src="images/jpg/img(3).jpg" alt="зображений Игорь Демьяненко"  />
+              <img 
+              srcset="
+              ./images/jpg/img360t1.jpg 1x,
+               ./images/jpg/img640t1.jpg 2x
+               " 
+               src="./images/jpg/img360t1.jpg"
+                alt="зображений Игорь Демьяненко"
+                 />
               <h3 class="title team-title-card">Игорь Демьяненко</h3>
               <p class="text team-text">Product Designer</p>
               <ul class=" list team-icon">
@@ -147,7 +174,7 @@
                 </li>
                 <li class="item team-item-icon">
                   <a href="#" class="link team-link-icon">
-                    <svg class="one-icon" width="20" height="20">
+                   <svg class="one-icon" width="20" height="20">
                       <use href="./images/svg/symbolall.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -155,7 +182,14 @@
               </ul>
             </li>
             <li class="item team-item ">
-              <img  src="images/jpg/img(4).jpg" alt="зображена Ольга Репина" />
+              <img  
+              srcset="
+              ./images/jpg/img360t2.jpg 1x,
+               ./images/jpg/img640t2.jpg 2x
+               "
+                src="./images/jpg/img360t2.jpg" 
+                alt="зображена Ольга Репина" 
+                />
               <h3 class="title team-title-card ">Ольга Репина</h3>
               <p class="text team-text">Frontend Developer</p>
               <ul class="list team-icon">
@@ -191,7 +225,14 @@
               </ul>
             </li>
             <li class="item team-item">
-              <img src="images/jpg/img(5).jpg" alt="зображений Николай Тарасов" />
+              <img 
+              srcset="
+              ./images/jpg/img360t3.jpg 1x,
+               ./images/jpg/img640t3.jpg 2x
+               " 
+               src="./images/jpg/img360t3.jpg" 
+               alt="зображений Николай Тарасов" 
+               />
               <h3 class="title team-title-card ">Николай Тарасов</h3>
               <p class="text team-text">Marketing</p>
               <ul class="list team-icon">
@@ -226,7 +267,23 @@
               </ul>
             </li>
             <li class="item team-item">
-              <img src="images/jpg/img(6).jpg" alt="зображений Михаил Ермаков"  />
+              <img  
+              srcset="
+                            ./images/jpg/img360t4.jpg 1x,
+                             ./images/jpg/img640t4.jpg 2x
+                             "
+                              src="./images/jpg/img360t4.jpg" 
+                             alt="зображений Михаил Ермаков"
+               /> 
+              <!-- <img  -->
+              <!-- srcset="
+              ./images/jpg/img360t4.jpg 320w,
+               ./images/jpg/img640t4.jpg 640w
+               "
+                src="./images/jpg/img360t4.jpg" 
+               alt="зображений Михаил Ермаков"
+          sizes="(min-width:1200px) 25vw, (min-width:678px)50vw,100vw" -->
+               <!-- /> -->
               <h3 class="title team-title-card ">Михаил Ермаков</h3>
               <p class="text team-text">UI Designer</p>
               <ul class="list team-icon">
@@ -295,7 +352,7 @@
             <li class="item client-item">
               <a href="#" class="link client-link">
                 <svg class="company" width="80" height="40">
-                  <use href="./images/svg/symbolall.svg#icon-logo-4" \></use>
+                  <use href="./images/svg/symbolall.svg#icon-logo-4" ></use>
                 </svg>
               </a>
             </li>
@@ -376,12 +433,12 @@
 
               <div class="form-chek">
                 <label class="form-name form-label ">
-                 <div>
+              
                   <input type="checkbox" class="form-input checkbox" name="chek" value="chek" />
                   <span class="span-icon"></span>
                   <span class="span-check-text"></span>
                   Соглашаюсь с рассылкой и принимаю <a href="#" class=" link span-check"> Условия договора</a>
-              </div>  </label>
+               </label>
 
                 <button class="button btn-submit" type="submit">Отправить</button>
               </div>

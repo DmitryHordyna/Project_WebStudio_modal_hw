@@ -1,6 +1,25 @@
+@media screen and (min-device-pixel-ratio: 1),
+  screen and (-webkit-min-device-pixel-ratio: 1),
+  screen and (-o-min-device-pixel-ratio: 1/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/jpg/img640h.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/jpg/img360h.jpg");
+  }
+}
 .hero {
   text-align: center;
-  max-width: 1600px;
+  max-width: 1200px;
   max-height: 600px;
 
   padding-top: 200px;
@@ -13,19 +32,20 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/jpg/Img-2.jpg");
+    url("../images/jpg/img360h.jpg");
   @extend %backgroundIcon;
 
   &-title {
-    @media screen and (max-width: 767px) {
-      font-size: 26px;
-      line-height: 1.6;
-    }
     margin-bottom: 30px;
 
     color: map-get($colors, "title");
     font-weight: map-get($fontWeight, "big");
     letter-spacing: map-get($letterSpacing, "most");
+
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 1.6;
+    }
   }
   .btn-hero {
     padding: 10px 32px;
