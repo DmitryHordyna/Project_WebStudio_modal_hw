@@ -99,10 +99,10 @@
             <li class="item galery-item">
               <img 
               srcset="
-              ./images/jpg/img360f1.jpg 1x,
-               ./images/jpg/img640f1.jpg 2x
+              ./images/main/features/img360f1.jpg 1x,
+               ./images/main/features/img640f1.jpg 2x
                "
-                src="./images/jpg/img360f1.jpg"
+             src="./images/main/features/img360f1a.jpg"
               
                  alt="робота за комп'ютером"  />
               <p class="text galery-text">Десктопные приложения</p>
@@ -110,10 +110,10 @@
             <li class="item galery-item">
               <img
               srcset="
-              ./images/jpg/img360f2.jpg 1x,
-               ./images/jpg/img640f2.jpg 2x
+                ./images/main/features/img360f2.jpg 1x,
+               ./images/main/features/img640f2.jpg 2x
                "
-                src="./images/jpg/img360f2.jpg"
+                src="./images/main/features/img360f2a.jpg"
             
                 alt="робота за телефоном"  />
               <p class="text galery-text">Мобильные приложения</p>
@@ -121,10 +121,10 @@
             <li class="item galery-item">
               <img 
               srcset="
-              ./images/jpg/img360f3.jpg 1x,
-               ./images/jpg/img640f3.jpg 2x
+                 ./images/main/features/img360f3.jpg 1x,
+               ./images/main/features/img640f3.jpg 2x
                "
-                src="./images/jpg/img360f3.jpg"
+             src="./images/main/features/img360f3a.jpg"
                  alt="робота за планшетом"  />
               <p class="text galery-text">Дизайнерские решения</p>
             </li>
@@ -140,14 +140,15 @@
           <h2 class="title section-title team-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="item team-item">
-              <img 
-              srcset="
-              ./images/jpg/img360t1.jpg 1x,
-               ./images/jpg/img640t1.jpg 2x
-               " 
-               src="./images/jpg/img360t1.jpg"
-                alt="зображений Игорь Демьяненко"
-                 />
+              <picture>
+                <source srcset="./images/main/team/phone/img360t1p.jpg 1x, /images/main/team/phone/img640t1p.jpg 2x"
+                  media="(max-width: 767px)" />
+                <source srcset="/images/main/team/table/img360t1t.jpg 1x, ./images/main/team/table/img640t1t.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="/images/main/team/destop/img360t1d.jpg 1x, ./images/main/team/destop/img640t1d.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/main/team/img360t1.jpg" alt="зображений Игорь Демьяненко"/>
+                </picture>
               <h3 class="title team-title-card">Игорь Демьяненко</h3>
               <p class="text team-text">Product Designer</p>
               <ul class=" list team-icon">
@@ -182,14 +183,15 @@
               </ul>
             </li>
             <li class="item team-item ">
-              <img  
-              srcset="
-              ./images/jpg/img360t2.jpg 1x,
-               ./images/jpg/img640t2.jpg 2x
-               "
-                src="./images/jpg/img360t2.jpg" 
-                alt="зображена Ольга Репина" 
-                />
+        <picture>
+          <source srcset="./images/main/team/phone/img360t2p.jpg 1x, /images/main/team/phone/img640t2p.jpg 2x"
+            media="(max-width: 767px)" />
+          <source srcset="/images/main/team/table/img360t2t.jpg 1x, ./images/main/team/table/img640t2t.jpg 2x"
+            media="(max-width: 1199px)" />
+          <source srcset="/images/main/team/destop/img360t2d.jpg 1x, ./images/main/team/destop/img640t2d.jpg 2x"
+            media="(min-width: 1200px)" />
+          <img src="./images/main/team/img360t2.jpg" alt="зображений Игорь Демьяненко" />
+        </picture>
               <h3 class="title team-title-card ">Ольга Репина</h3>
               <p class="text team-text">Frontend Developer</p>
               <ul class="list team-icon">
@@ -225,14 +227,15 @@
               </ul>
             </li>
             <li class="item team-item">
-              <img 
-              srcset="
-              ./images/jpg/img360t3.jpg 1x,
-               ./images/jpg/img640t3.jpg 2x
-               " 
-               src="./images/jpg/img360t3.jpg" 
-               alt="зображений Николай Тарасов" 
-               />
+            <picture>
+              <source srcset="./images/main/team/phone/img360t3p.jpg 1x, /images/main/team/phone/img640t3p.jpg 2x"
+                media="(max-width: 767px)" />
+              <source srcset="/images/main/team/table/img360t3t.jpg 1x, ./images/main/team/table/img640t3t.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source srcset="/images/main/team/destop/img360t3d.jpg 1x, ./images/main/team/destop/img640t3d.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img src="./images/main/team/img360t3.jpg" alt="зображений Николай Тарасов" />
+            </picture>
               <h3 class="title team-title-card ">Николай Тарасов</h3>
               <p class="text team-text">Marketing</p>
               <ul class="list team-icon">
@@ -267,23 +270,15 @@
               </ul>
             </li>
             <li class="item team-item">
-              <img  
-              srcset="
-                            ./images/jpg/img360t4.jpg 1x,
-                             ./images/jpg/img640t4.jpg 2x
-                             "
-                              src="./images/jpg/img360t4.jpg" 
-                             alt="зображений Михаил Ермаков"
-               /> 
-              <!-- <img  -->
-              <!-- srcset="
-              ./images/jpg/img360t4.jpg 320w,
-               ./images/jpg/img640t4.jpg 640w
-               "
-                src="./images/jpg/img360t4.jpg" 
-               alt="зображений Михаил Ермаков"
-          sizes="(min-width:1200px) 25vw, (min-width:678px)50vw,100vw" -->
-               <!-- /> -->
+              <picture>
+                <source srcset="./images/main/team/phone/img360t4p.jpg 1x, /images/main/team/phone/img640t4p.jpg 2x"
+                  media="(max-width: 767px)" />
+                <source srcset="/images/main/team/table/img360t4t.jpg 1x, ./images/main/team/table/img640t4t.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="/images/main/team/destop/img360t4d.jpg 1x, ./images/main/team/destop/img640t4d.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/main/team/img360t4.jpg" alt="зображений Михаил Ермаков" />
+              </picture>
               <h3 class="title team-title-card ">Михаил Ермаков</h3>
               <p class="text team-text">UI Designer</p>
               <ul class="list team-icon">

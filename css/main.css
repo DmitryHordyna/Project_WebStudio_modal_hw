@@ -1031,22 +1031,30 @@ svg {
   }
 }
 
+.hero {
+  background-image: url("./images/main/hero/phone/img360hp.jpg");
+}
+
 @media screen and (min-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/jpg/img640h.jpg");
+    background-image: url("./images/main/hero/phone/img640hp.jpg");
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media (min-widht: 489px) {
   .hero {
-    background-image: url("../images/jpg/img360h.jpg");
+    background-image: url("./images/main/hero/table/img640ht.jpg");
+  }
+}
+
+@media screen and (min-widht: 489px) and (min-device-pixel-ratio: 1), screen and (min-widht: 489px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-widht: 489px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-widht: 489px) and (min-resolution: 192dpi), screen and (min-widht: 489px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("./images/main/hero/table/img640ht.jpg");
   }
 }
 
 .hero {
   text-align: center;
-  max-width: 1200px;
-  max-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-right: auto;
