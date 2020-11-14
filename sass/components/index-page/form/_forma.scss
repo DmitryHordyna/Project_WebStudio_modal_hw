@@ -98,7 +98,7 @@
 // .form-input:checked + .span-icon {
 //   border: map-get($colors, "accent");
 //   background-color: map-get($colors, "accent");
-//   background-image: url("../images/svg/Vectorok.svg");
+//   background-image: url("/images/svg/Vectorok.svg");
 //   @extend %backgroundIcon;
 //   background-repeat: no-repeat;
 //   background-position: center;
@@ -251,7 +251,7 @@
 .form-input:checked + .span-icon {
   border: map-get($colors, "accent");
   background-color: map-get($colors, "accent");
-  background-image: url("../images/svg/Vectorok.svg");
+  background-image: url("./images/svg/Vectorok.svg");
   @extend %backgroundIcon;
   background-repeat: no-repeat;
   background-position: center;
