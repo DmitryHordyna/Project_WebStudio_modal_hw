@@ -1039,8 +1039,8 @@ svg {
   margin-left: auto;
   max-width: 480px;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/phone/img360hp.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/phone/img360hp.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/main/hero/phone/img360hp.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/main/hero/phone/img360hp.jpg");
   background-size: 480px 400px;
 }
 
@@ -1062,38 +1062,38 @@ svg {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/phone/img640hp.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/phone/img640hp.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/main/hero/phone/img640hp.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/main/hero/phone/img640hp.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/table/img360ht.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/table/img360ht.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/main/hero/table/img360ht.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/main/hero/table/img360ht.jpg");
     background-size: 768px 400px;
   }
 }
 
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/table/img640ht.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/table/img640ht.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/main/hero/table/img640ht.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/main/hero/table/img640ht.jpg");
   }
 }
 
 @media screen and (min-width: 1199px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/phone/destop/img360hd.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/phone/destop/img360hd.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/main/hero/phone/destop/img360hd.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/main/hero/phone/destop/img360hd.jpg");
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/destop/img640hd.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/destop/img640hd.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/main/hero/destop/img640hd.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/main/hero/destop/img640hd.jpg");
   }
 }
 
@@ -1201,19 +1201,19 @@ svg {
 }
 
 .icon-spytnik::before {
-  background-image: url("../images/svg/antenna1.svg");
+  background-image: url("./images/svg/antenna1.svg");
 }
 
 .icon-cloc::before {
-  background-image: url("../images/svg/clock1.svg");
+  background-image: url("./images/svg/clock1.svg");
 }
 
 .icon-tv::before {
-  background-image: url("../images/svg/diagram1.svg");
+  background-image: url("./images/svg/diagram1.svg");
 }
 
 .icon-space::before {
-  background-image: url("../images/svg/astronaut1.svg");
+  background-image: url("./images/svg/astronaut1.svg");
 }
 
 @media screen and (max-width: 1199px) {
@@ -1458,6 +1458,9 @@ svg {
 }
 
 .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1490,6 +1493,15 @@ svg {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1505,6 +1517,12 @@ svg {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 8px;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 90%;
+  top: 1%;
 }
 
 .btn-close {
@@ -1539,6 +1557,7 @@ svg {
 }
 
 .form-title {
+  margin-top: 40px;
   text-align: center;
   font-size: 20px;
   line-height: 1.15;
@@ -1653,7 +1672,7 @@ svg {
 .form-input:checked + .span-icon {
   border: #2196f3;
   background-color: #2196f3;
-  background-image: url("../images/svg/Vectorok.svg");
+  background-image: url("./images/svg/Vectorok.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-origin: contain;

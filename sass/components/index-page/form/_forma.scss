@@ -164,6 +164,7 @@
   flex-direction: column;
 }
 .form-title {
+  margin-top: 40px;
   text-align: center;
   font-weight: map-get($colors, "bold");
   font-size: 20px;
