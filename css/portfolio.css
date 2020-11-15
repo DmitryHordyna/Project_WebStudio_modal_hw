@@ -733,14 +733,14 @@ svg {
     line-height: 1.14;
   }
   .link-current::after {
-    bottom: -32px;
+    bottom: -33px;
   }
   .link-active {
     font-size: 14px;
     line-height: 1.14;
   }
   .link-active::after {
-    bottom: -32px;
+    bottom: -33px;
   }
 }
 
