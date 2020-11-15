@@ -74,7 +74,9 @@
   cursor: pointer;
 
   @extend %transition;
-
+  .icon-exit {
+    margin-top: 3px;
+  }
   &:hover .icon-exit,
   :focus .icon-exit {
     fill: map-get($colors, "accent");
