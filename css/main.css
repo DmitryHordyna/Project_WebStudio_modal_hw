@@ -1084,8 +1084,8 @@ svg {
 
 @media screen and (min-width: 1199px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/phone/destop/img360hd.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/phone/destop/img360hd.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/main/hero/destop/img360hd.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/hero/destop/img360hd.jpg");
     background-size: 1600px 600px;
   }
 }
@@ -1452,12 +1452,6 @@ svg {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 480px) {
-  .backdrop {
-    left: -5px;
-  }
-}
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1484,19 +1478,16 @@ svg {
 
 @media screen and (max-width: 480px) {
   .modal {
-    left: 45%;
-    margin-left: 15px;
-    margin-right: 15px;
     max-width: 480px;
-    height: 609px;
+    left: 47%;
     width: 100%;
+    max-width: 609px;
   }
 }
 
 @media screen and (min-width: 481px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 
@@ -1532,6 +1523,12 @@ svg {
   top: 1%;
 }
 
+@media screen and (max-width: 480px) {
+  .modal-icon {
+    left: 87%;
+  }
+}
+
 .btn-close {
   height: 30px;
   width: 30px;
@@ -1539,10 +1536,6 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-}
-
-.btn-close .icon-exit {
-  margin-top: 3px;
 }
 
 .btn-close:hover .icon-exit,
@@ -1577,7 +1570,7 @@ svg {
 @media screen and (max-width: 1199px) {
   .form-title {
     font-size: 20px;
-    line-height: 1.5%;
+    line-height: 1.5;
   }
 }
 

@@ -5,9 +5,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  @media screen and (max-width: 480px) {
-    left: -5px;
-  }
 }
 
 .backdrop.is-hidden {
@@ -26,16 +23,13 @@
   // padding: 0;
 
   @media screen and (max-width: 480px) {
-    left: 45%;
-    margin-left: 15px;
-    margin-right: 15px;
     max-width: 480px;
-    height: 609px;
+    left: 47%;
     width: 100%;
+    max-width: 609px;
   }
   @media screen and(min-width:481px) {
     width: 450px;
-    height: 609px;
   }
   @media screen and (max-width: 1199px) {
     padding-left: 40px;
@@ -68,6 +62,9 @@
   position: absolute;
   left: 90%;
   top: 1%;
+  @media screen and (max-width: 480px) {
+    left: 87%;
+  }
 }
 .btn-close {
   height: 30px;
@@ -79,9 +76,7 @@
   cursor: pointer;
 
   @extend %transition;
-  .icon-exit {
-    margin-top: 3px;
-  }
+
   &:hover .icon-exit,
   :focus .icon-exit {
     fill: map-get($colors, "accent");
