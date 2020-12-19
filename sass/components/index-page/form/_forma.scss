@@ -145,7 +145,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-submit:focus,
+.submit:focus,
 .submit:hover {
   background-color: map-get($colors, "btn-focus");
 }
